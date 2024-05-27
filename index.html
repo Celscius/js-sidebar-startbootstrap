@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <link rel="icon" type="image/x-icon" href="dist/assets/favicon.ico" />
+      <!-- Core theme CSS (includes Bootstrap)-->
+      <link href="dist/css/styles.css" rel="stylesheet" />
+      <!-- style for fixed sidebar -->
+      <!-- boostrap icon -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   </head>
+   <body>
+      <!-- app content -->
+      <div id="app" >
+         <!-- run loader animation on page open -->
+         <div class="d-flex align-items-center justify-content-center" style="height: 400px;padding-left: 200px">
+            <div class="spinner-border text-secondary" role="status">
+            </div>
+         </div>
+         <!-- end loader -->
+      </div>
+      <!-- end app content -->
+      <script >
+         setTimeout(() => {
+              location.href = "pages/index.html"// when error
+         }, 1000);
+         // 
+      </script>
+   </body>
+</html>
