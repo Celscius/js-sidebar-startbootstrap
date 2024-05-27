@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <title>Simple Sidebar - Start Bootstrap Template</title>
+      <!-- Favicon-->
+      <link rel="icon" type="image/x-icon" href="dist/assets/favicon.ico" />
+      <!-- Core theme CSS (includes Bootstrap)-->
+      <link href="../dist/css/styles.css" rel="stylesheet" />
+
+      <!-- style for fixed sidebar -->
+      <link rel="stylesheet" type="text/css" href="position-fixed.css">
+      <!-- boostrap icon -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+      <style>
+       
+      </style>
+   </head>
+   <body >
+      <div class="d-flex" id="wrapper">
+         <!-- Sidebar-->
+         <div class="border-end bg-white " id="sidebar-wrapper" style="padding-top: 55px;">
+            
+            <!-- sidebar poisition height -->
+            <div id="sidebar" class="list-group list-group-flush overflow-auto position-fixed" style="height: 83%" >
+              <!-- sidebar item here-->
+             
+            </div>
+         </div>
+         <!-- Page content wrapper-->
+         <div id="page-content-wrapper">
+          <div id="navbar"></div>
+            <!-- navbar item-->
+
+            <!-- Page content-->
+            <div class="container-top mb-5" >
+             <div id="app">
+               <div class="d-flex align-items-center justify-content-center" style="height: 400px;padding-left: 200px">
+                  <div class="spinner-border text-secondary" role="status">
+                  </div>
+               </div>
+             </div>
+            </div>
+         </div>
+      </div>
+          <script src="navbar.js"></script>
+          <script src="sidebar.js"></script>
+          <script src="container.js"></script>
+          <script src="app.js"></script>
+         
+<script >
+//remove sidebar if open during desktop view
+//get the class
+(class_remove = () => {
+    //get element
+    const mobile = document.getElementsByTagName("body")[0];
+    //run function on screen resize
+    window.addEventListener('resize', function(event) {
+        if (mobile.classList.contains("sb-sidenav-toggled")) {
+            // do something here if the class exists
+            mobile.classList.remove("sb-sidenav-toggled")
+            console.log("class remove")           
+        }
+    }, true);
+})()
+
+
+      </script>
+      <!-- local storage -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.10.0/localforage.min.js"></script>
+      <!-- Bootstrap core JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Core theme JS-->
+      <script src="../dist/js/scripts.js"></script>
+   </body>
+</html>
